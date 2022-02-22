@@ -7,6 +7,7 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'site',
   publicPath: process.env.NODE_ENV === 'production' ? '/ocrazy/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/ocrazy/' : '/',
   // more config: https://d.umijs.org/config
   extraPostCSSPlugins: [
     require('tailwindcss')({
