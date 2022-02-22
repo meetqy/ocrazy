@@ -6,7 +6,7 @@ export default defineConfig({
   logo: '/images/crazy.png',
   outputPath: 'docs-dist',
   mode: 'site',
-  base: '/ocrazy',
+  publicPath: process.env.NODE_ENV === 'production' ? '/ocrazy/' : '/',
   // more config: https://d.umijs.org/config
   extraPostCSSPlugins: [
     require('tailwindcss')({
