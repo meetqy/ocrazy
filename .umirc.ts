@@ -3,11 +3,12 @@ import { defineConfig } from 'dumi';
 const NODE_ENV = process.env.NODE_ENV;
 
 const baseUrl = NODE_ENV === 'production' ? '/ocrazy/' : '/';
+const imageUrl = 'https://gitee.com/meetqy/ocrazy/raw/main/public/images';
 
 export default defineConfig({
   title: 'oCrazy',
-  favicon: `${baseUrl}images/crazy.png`,
-  logo: `${baseUrl}images/crazy.png`,
+  favicon: `${imageUrl}/crazy.png`,
+  logo: `${imageUrl}/crazy.png`,
   outputPath: 'docs-dist',
   mode: 'site',
   publicPath: baseUrl,

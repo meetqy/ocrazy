@@ -18,7 +18,7 @@ export interface SectionZoffyProps {
    * string：图片链接地址;
    * Element：自定义样式
    */
-  rightWrapper: JSX.Element | string;
+  rightWrapper: JSX.Element | string | undefined;
 }
 
 const defaultProps: SectionZoffyProps = {
@@ -27,7 +27,7 @@ const defaultProps: SectionZoffyProps = {
   button: 'Get a Monzo Bank account',
   reverse: false,
   height: '660px',
-  rightWrapper: <div style={{ color: 'white' }}>自定义内容</div>,
+  rightWrapper: undefined,
 };
 
 const renderButton = (button: JSX.Element | string): JSX.Element => {
@@ -42,7 +42,9 @@ const renderButton = (button: JSX.Element | string): JSX.Element => {
   }
 };
 
-const renderRightWrapper = (rightWrapper: JSX.Element | string) => {
+const renderRightWrapper = (rightWrapper: JSX.Element | string | undefined): JSX.Element | null => {
+  if (rightWrapper === undefined) return null;
+
   if (typeof rightWrapper === 'string') {
     return (
       <picture className="flex relative justify-end">
@@ -50,7 +52,6 @@ const renderRightWrapper = (rightWrapper: JSX.Element | string) => {
       </picture>
     );
   } else {
-    console.log(rightWrapper);
     return rightWrapper;
   }
 };

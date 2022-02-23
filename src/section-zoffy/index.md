@@ -15,7 +15,9 @@ group:
 import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
-export default () => <SectionZoffy rightWrapper="/images/section/zoffy.png" />;
+export default () => (
+  <SectionZoffy rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png" />
+);
 ```
 
 ## 基本使用
@@ -33,7 +35,7 @@ export default () => (
     title="爸爸的快乐！"
     desc="我是你爸爸，我真伟大，养你这么大，你还不听话，天天到晚去玩耍！"
     button="爸爸去哪儿了 👉🏻"
-    rightWrapper="/images/section/zoffy.png"
+    rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
   />
 );
 ```
@@ -48,7 +50,12 @@ export default () => (
 import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
-export default () => <SectionZoffy rightWrapper="/images/section/zoffy.png" reverse />;
+export default () => (
+  <SectionZoffy
+    rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+    reverse
+  />
+);
 ```
 
 ## 高度自动
@@ -64,7 +71,11 @@ import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
 export default () => (
-  <SectionZoffy rightWrapper="/images/section/zoffy.png" reverse height="auto" />
+  <SectionZoffy
+    rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+    reverse
+    height="auto"
+  />
 );
 ```
 
