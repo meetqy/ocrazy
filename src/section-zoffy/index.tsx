@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 export interface SectionZoffyProps {
   /**标题 */
@@ -7,6 +7,12 @@ export interface SectionZoffyProps {
   desc?: string;
   /** 按钮 */
   button?: JSX.Element | string;
+  /**设置容器高度 */
+  height?: string;
+
+  /**反方向 移动端不会更改方向*/
+  reverse?: boolean;
+
   /**
    * 右边内容,
    * string：图片链接地址;
@@ -20,6 +26,8 @@ const defaultProps: SectionZoffyProps = {
   desc: 'Spend, save and manage your money, all in one place. Open a full UK bank account from your phone, for free.',
   button: 'Get a Monzo Bank account',
   rightWrapper: '/section/zoffy.png',
+  reverse: false,
+  height: '660px',
 };
 
 const renderButton = (button: JSX.Element | string): JSX.Element => {
@@ -42,18 +50,23 @@ const renderRightWrapper = (rightWrapper: JSX.Element | string) => {
       </picture>
     );
   } else {
+    console.log(rightWrapper);
     return rightWrapper;
   }
 };
 
 const SectionZoffy = (props: SectionZoffyProps): JSX.Element => {
+  const row = props.reverse ? 'md:flex-row-reverse' : 'md:flex-row';
+
   return (
     <section
       className="bg-slate-800 flex items-center overflow-hidden md:flex-row flex-col"
-      style={{ height: '660px' }}
+      style={{ height: props.height }}
     >
       <div className="px-8 lg:px-16 w-full xl:w-4/5 2xl:w-3/4 mx-0 xl:mx-auto">
-        <div className="flex items-center basis-auto grow-0 shrink flex-wrap -mx-4 flex-col md:flex-row md:pt-0 pt-16">
+        <div
+          className={`flex items-center basis-auto grow-0 shrink flex-wrap -mx-4 md:pt-0 pt-16 flex-col ${row}`}
+        >
           <div className="md:w-1/2 w-full px-4">
             <h1 className="m-0 leading-normal font-bold text-white lg:text-5xl md:text-4xl text-3xl">
               {props.title}
