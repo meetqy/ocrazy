@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 const NODE_ENV = process.env.NODE_ENV;
 
-const baseUrl = NODE_ENV === 'production' ? '/ocrazy' : '/';
+const baseUrl = NODE_ENV === 'production' ? '/ocrazy/' : '/';
 
 export default defineConfig({
   title: 'oCrazy',
