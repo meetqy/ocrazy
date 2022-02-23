@@ -15,7 +15,7 @@ group:
 import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
-export default () => <SectionZoffy />;
+export default () => <SectionZoffy rightWrapper="/images/section/zoffy.png" />;
 ```
 
 ## 基本使用
@@ -33,6 +33,7 @@ export default () => (
     title="爸爸的快乐！"
     desc="我是你爸爸，我真伟大，养你这么大，你还不听话，天天到晚去玩耍！"
     button="爸爸去哪儿了 👉🏻"
+    rightWrapper="/images/section/zoffy.png"
   />
 );
 ```
@@ -47,7 +48,7 @@ export default () => (
 import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
-export default () => <SectionZoffy reverse />;
+export default () => <SectionZoffy rightWrapper="/images/section/zoffy.png" reverse />;
 ```
 
 ## 高度自动
@@ -62,7 +63,9 @@ export default () => <SectionZoffy reverse />;
 import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
-export default () => <SectionZoffy reverse height="auto" />;
+export default () => (
+  <SectionZoffy rightWrapper="/images/section/zoffy.png" reverse height="auto" />
+);
 ```
 
 ## 自定义

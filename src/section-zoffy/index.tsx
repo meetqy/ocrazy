@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 
 export interface SectionZoffyProps {
   /**标题 */
@@ -25,9 +25,9 @@ const defaultProps: SectionZoffyProps = {
   title: 'Banking made easy',
   desc: 'Spend, save and manage your money, all in one place. Open a full UK bank account from your phone, for free.',
   button: 'Get a Monzo Bank account',
-  rightWrapper: '/section/zoffy.png',
   reverse: false,
   height: '660px',
+  rightWrapper: <div style={{ color: 'white' }}>自定义内容</div>,
 };
 
 const renderButton = (button: JSX.Element | string): JSX.Element => {
