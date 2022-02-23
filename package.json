@@ -25,13 +25,16 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "v": "npm version patch -m 'build: bump version to %s'",
-    "release": "npm run build && npm publish"
+    "prepublish": "npm run build"
   },
   "module": "es/index.js",
   "typings": "es/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "files": [
+    "es"
+  ],
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
