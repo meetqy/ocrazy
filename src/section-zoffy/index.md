@@ -132,5 +132,42 @@ export default () => (
 <API></API>
 
 <Alert type='info'>
-  样式来源：<a href='https://monzo.com/' target="_blank">https://monzo.com/</a>
+  来源：<a href='https://monzo.com/' target="_blank">https://monzo.com/</a>
+</Alert>
+
+## 更多样式
+
+```tsx
+/**
+ * hideActions: ["CSB"]
+ * iframe: 660
+ */
+import React from 'react';
+import { SectionZoffy } from 'ocrazy';
+
+export default () => (
+  <SectionZoffy
+    rightWrapper="/images/section/zoffy-1.png"
+    title="L'app pour la tranquillité d'esprit"
+    desc="Ouvrez des comptes en GBP, EUR et RON en quelques minutes avec des taux de change avantageux, des rechargements instantanés et une protection intégrée pour vos achats et factures"
+    style={{ background: '#0b72fd' }}
+    descStyle={{ color: 'hsla(0,0%,100%,0.65)', fontSize: '22px', lineHeight: '28px' }}
+    button={
+      <button
+        style={{
+          padding: '12px 24px',
+          background: 'white',
+          color: '#0b72fd',
+          borderRadius: '12px',
+        }}
+      >
+        S'inscrire
+      </button>
+    }
+  />
+);
+```
+
+<Alert type='info'> 
+  来源：<a href='https://monese.com/gb/fr' target="_blank">https://monese.com/gb/fr</a> 
 </Alert>

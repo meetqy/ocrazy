@@ -25,7 +25,7 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "v": "npm version patch -m 'build: bump version to %s'",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "module": "es/index.js",
   "typings": "es/index.d.ts",

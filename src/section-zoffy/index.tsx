@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 export interface SectionZoffyProps {
   /**标题 */
   title: string;
   /**描述 */
   desc?: string;
+  /**自定义描述样式 */
+  descStyle?: CSSProperties;
   /** 按钮 */
   button?: JSX.Element | string;
   /**设置容器高度 */
@@ -12,6 +14,8 @@ export interface SectionZoffyProps {
 
   /**反方向 移动端不会更改方向*/
   reverse?: boolean;
+  /**自定义样式 */
+  style?: CSSProperties | undefined;
 
   /**
    * 右边内容,
@@ -62,7 +66,10 @@ const SectionZoffy = (props: SectionZoffyProps): JSX.Element => {
   return (
     <section
       className="bg-slate-800 flex items-center overflow-hidden md:flex-row flex-col"
-      style={{ height: props.height }}
+      style={{
+        height: props.height,
+        ...props.style,
+      }}
     >
       <div className="px-8 lg:px-16 w-full xl:w-4/5 2xl:w-3/4 mx-0 xl:mx-auto">
         <div
@@ -72,7 +79,12 @@ const SectionZoffy = (props: SectionZoffyProps): JSX.Element => {
             <h1 className="m-0 leading-normal font-bold text-white lg:text-5xl md:text-4xl text-3xl">
               {props.title}
             </h1>
-            <p className="text-2xl lg:text-3xl  text-white mt-6 font-extralight">{props.desc}</p>
+            <p
+              className="text-2xl lg:text-3xl text-white mt-6 font-extralight"
+              style={{ ...props.descStyle }}
+            >
+              {props.desc}
+            </p>
             {props.button !== undefined && <div className="mt-6">{renderButton(props.button)}</div>}
           </div>
           <div className="md:w-1/2 w-full px-4 grow shrink-0 mt-8 md:mt-0">
