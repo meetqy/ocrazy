@@ -1,12 +1,15 @@
-import React, { CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
+import React from 'react';
 
 export interface SectionZoffyProps {
   /**标题 */
   title: string;
+
   /**描述 */
   desc?: string;
   /**自定义描述样式 */
   descStyle?: CSSProperties;
+
   /** 按钮 */
   button?: JSX.Element | string;
   /**设置容器高度 */
@@ -14,6 +17,7 @@ export interface SectionZoffyProps {
 
   /**反方向 移动端不会更改方向*/
   reverse?: boolean;
+
   /**自定义样式 */
   style?: CSSProperties | undefined;
 
