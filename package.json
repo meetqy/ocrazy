@@ -24,8 +24,7 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "v": "npm version patch -m 'build: bump version to %s'",
-    "prepublishOnly": "npm run build",
+    "release": "standard-version",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src"
   },
   "module": "es/index.js",
@@ -61,6 +60,7 @@
     "lint-staged": "^10.0.7",
     "postcss-import": "^14.0.2",
     "prettier": "^2.2.1",
+    "standard-version": "^9.3.2",
     "tailwindcss": "^3.0.23",
     "yorkie": "^2.0.0"
   }
