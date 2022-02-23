@@ -1,33 +1,7 @@
-# ocrazy
+# oCrazy
 
-## Getting Started
+🦆 `Tailwind CSS`+`React`实现的响应式 UI 组件
 
-Install dependencies,
+📚 文档
 
-```bash
-$ npm i
-```
-
-Start the dev server,
-
-```bash
-$ npm start
-```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Run test,
-
-```bash
-$ npm test
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
+- [中文](https://meetqy.github.io/ocrazy/)
