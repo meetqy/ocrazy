@@ -1,8 +1,10 @@
 ---
 nav:
   path: /components
+  order: 2
 group:
   title: Section
+  order: 1
 ---
 
 # Zoffy <Badge>佐菲-M78 星云·光之国</Badge>

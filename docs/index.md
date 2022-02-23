@@ -4,7 +4,7 @@ hero:
   desc: 🦆 `Tailwind CSS`+`React`实现的响应式UI组件
   actions:
     - text: 快速上手
-      link: /components
+      link: /components/section-zoffy
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 响应式

@@ -25,6 +25,7 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "release": "standard-version",
+    "log:preview": "standard-version --dry-run",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src"
   },
   "module": "es/index.js",
