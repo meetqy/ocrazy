@@ -5,7 +5,7 @@ group:
   title: Section
 ---
 
-# Zoffy
+# Zoffy <Badge>佐菲-M78 星云·光之国</Badge>
 
 ```tsx
 /**
@@ -117,4 +117,6 @@ export default () => (
 
 <API></API>
 
-样式来源：https://monzo.com/
+<Alert type='info'>
+  样式来源：<a href='https://monzo.com/' target="_blank">https://monzo.com/</a>
+</Alert>
