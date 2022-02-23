@@ -1,12 +1,17 @@
 {
   "name": "ocrazy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "🦆 `Tailwind CSS`+`React`实现的响应式 UI 组件",
   "homepage": "https://meetqy.github.io/ocrazy/",
   "author": "xiaoqiyang",
   "license": "MIT",
-  "keywords": ["tailwind", "react", "mobile", "pc"],
-  "repository":{
+  "keywords": [
+    "tailwind",
+    "react",
+    "mobile",
+    "pc"
+  ],
+  "repository": {
     "type": "git",
     "url": "https://github.com/meetqy/ocrazy"
   },
