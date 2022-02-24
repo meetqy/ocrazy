@@ -9,6 +9,8 @@ group:
 
 # Zoffy <Badge>佐菲-M78 星云·光之国</Badge>
 
+效果：两边各占 50%，随着屏幕改变调整屏幕两边间距，移动端从 row 变为 col 方式排列。
+
 ```tsx
 /**
  * hideActions: ["CSB"]
