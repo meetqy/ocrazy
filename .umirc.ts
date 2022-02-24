@@ -1,15 +1,15 @@
 import { defineConfig } from 'dumi';
 
-const baseUrl = '/ocrazy/';
+const prefix = '/ocrazy';
 
 export default defineConfig({
   title: 'oCrazy',
-  favicon: `${baseUrl}images/crazy.png`,
-  logo: `${baseUrl}images/crazy.png`,
+  favicon: `${prefix}/images/crazy.png`,
+  logo: `${prefix}/images/crazy.png`,
   outputPath: 'docs-dist',
   mode: 'site',
-  publicPath: baseUrl,
-  base: baseUrl,
+  base: prefix,
+  publicPath: prefix + '/',
   locales: [
     ['zh-CN', '中文'],
     ['en-US', 'English'],
