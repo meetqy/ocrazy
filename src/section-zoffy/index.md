@@ -9,7 +9,7 @@ group:
 
 # Zoffy <Badge>佐菲-M78 星云·光之国</Badge>
 
-效果：两边各占 50%，随着屏幕改变调整屏幕两边间距，移动端从 row 变为 col 方式排列。
+效果：随着窗口变小 => 两边内容中间靠拢 => 右侧图片变小 => 移动端从 `row` 变为 `col`
 
 ```tsx
 /**
@@ -20,7 +20,18 @@ import React from 'react';
 import { SectionZoffy } from 'ocrazy';
 
 export default () => (
-  <SectionZoffy rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png" />
+  <SectionZoffy
+    rightWrapper={
+      <picture className="flex relative justify-end">
+        <img
+          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+          alt=""
+          width={536}
+          height="100%"
+        />
+      </picture>
+    }
+  />
 );
 ```
 
@@ -39,7 +50,16 @@ export default () => (
     title="爸爸的快乐！"
     desc="我是你爸爸，我真伟大，养你这么大，你还不听话，天天到晚去玩耍！"
     button="爸爸去哪儿了 👉🏻"
-    rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+    rightWrapper={
+      <picture className="flex relative justify-end">
+        <img
+          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+          alt=""
+          width={536}
+          height="100%"
+        />
+      </picture>
+    }
   />
 );
 ```
@@ -56,7 +76,16 @@ import { SectionZoffy } from 'ocrazy';
 
 export default () => (
   <SectionZoffy
-    rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+    rightWrapper={
+      <picture className="flex relative justify-end">
+        <img
+          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+          alt=""
+          width={536}
+          height="100%"
+        />
+      </picture>
+    }
     reverse
   />
 );
@@ -76,7 +105,16 @@ import { SectionZoffy } from 'ocrazy';
 
 export default () => (
   <SectionZoffy
-    rightWrapper="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+    rightWrapper={
+      <picture className="flex relative justify-end">
+        <img
+          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
+          alt=""
+          width={536}
+          height="100%"
+        />
+      </picture>
+    }
     reverse
     height="auto"
   />
@@ -151,12 +189,21 @@ import { SectionZoffy } from 'ocrazy';
 
 export default () => (
   <SectionZoffy
-    rightWrapper="/images/section/zoffy-1.png"
+    rightWrapper={
+      <picture className="flex relative justify-end">
+        <img
+          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy-1.png"
+          alt=""
+          width={536}
+          height="100%"
+        />
+      </picture>
+    }
     title="L'app pour la tranquillité d'esprit"
     desc="Ouvrez des comptes en GBP, EUR et RON en quelques minutes avec des taux de change avantageux, des rechargements instantanés et une protection intégrée pour vos achats et factures"
     style={{ background: '#0b72fd' }}
     descStyle={{ color: 'hsla(0,0%,100%,0.65)', fontSize: '22px', lineHeight: '28px' }}
-    button={
+    buttonWrapper={
       <button
         style={{
           padding: '12px 24px',
