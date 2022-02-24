@@ -28,7 +28,7 @@ export default () => (
         viewBox="0 0 680 956"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="w-auto"
+        className="w-auto"
         style={{ height: '600px' }}
       >
         <circle cx="340" cy="428" r="340" fill="#F1F5FE"></circle>
@@ -62,9 +62,9 @@ export default () => (
             width="519"
             height="956"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -90,9 +90,9 @@ export default () => (
             width="72"
             height="830"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
             <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
           </filter>
@@ -103,9 +103,9 @@ export default () => (
             width="72"
             height="830"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
             <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
           </filter>
@@ -117,8 +117,8 @@ export default () => (
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(286.75008 212.24974 -632.54832 854.57482 179.75 390.25)"
           >
-            <stop stop-opacity="0.2"></stop>
-            <stop offset="1" stop-opacity="0"></stop>
+            <stop stopOpacity="0.2"></stop>
+            <stop offset="1" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="prefix__paint2_radial"
@@ -128,9 +128,9 @@ export default () => (
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(0 756.5 -2254.52 0 499 131)"
           >
-            <stop stop-opacity="0"></stop>
-            <stop offset="0.453" stop-opacity="0.2"></stop>
-            <stop offset="1" stop-opacity="0"></stop>
+            <stop stopOpacity="0"></stop>
+            <stop offset="0.453" stopOpacity="0.2"></stop>
+            <stop offset="1" stopOpacity="0"></stop>
           </radialGradient>
           <linearGradient
             id="prefix__paint0_linear"
@@ -140,8 +140,8 @@ export default () => (
             y2="799.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F2F2F3"></stop>
-            <stop offset="0.64" stop-color="#CACED2"></stop>
+            <stop stopColor="#F2F2F3"></stop>
+            <stop offset="0.64" stopColor="#CACED2"></stop>
           </linearGradient>
           <pattern
             id="prefix__img1"
@@ -150,11 +150,7 @@ export default () => (
             height="1"
             viewBox="0 0 375 812"
           >
-            <image
-              href="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/portfolio.svg"
-              width="375"
-              height="812"
-            ></image>
+            <image href="/images/section/portfolio.svg" width="375" height="812" />
           </pattern>
         </defs>
       </svg>
@@ -186,7 +182,7 @@ export default () => (
         viewBox="0 0 680 956"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="w-auto"
+        className="w-auto"
         style={{ height: '600px' }}
       >
         <circle cx="340" cy="428" r="340" fill="#F1F5FE"></circle>
@@ -220,9 +216,9 @@ export default () => (
             width="519"
             height="956"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -248,9 +244,9 @@ export default () => (
             width="72"
             height="830"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
             <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
           </filter>
@@ -261,9 +257,9 @@ export default () => (
             width="72"
             height="830"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
             <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur"></feGaussianBlur>
           </filter>
@@ -275,8 +271,8 @@ export default () => (
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(286.75008 212.24974 -632.54832 854.57482 179.75 390.25)"
           >
-            <stop stop-opacity="0.2"></stop>
-            <stop offset="1" stop-opacity="0"></stop>
+            <stop stopOpacity="0.2"></stop>
+            <stop offset="1" stopOpacity="0"></stop>
           </radialGradient>
           <radialGradient
             id="prefix__paint2_radial"
@@ -286,9 +282,9 @@ export default () => (
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(0 756.5 -2254.52 0 499 131)"
           >
-            <stop stop-opacity="0"></stop>
-            <stop offset="0.453" stop-opacity="0.2"></stop>
-            <stop offset="1" stop-opacity="0"></stop>
+            <stop stopOpacity="0"></stop>
+            <stop offset="0.453" stopOpacity="0.2"></stop>
+            <stop offset="1" stopOpacity="0"></stop>
           </radialGradient>
           <linearGradient
             id="prefix__paint0_linear"
@@ -298,8 +294,8 @@ export default () => (
             y2="799.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F2F2F3"></stop>
-            <stop offset="0.64" stop-color="#CACED2"></stop>
+            <stop stopColor="#F2F2F3"></stop>
+            <stop offset="0.64" stopColor="#CACED2"></stop>
           </linearGradient>
           <pattern
             id="prefix__img1"
@@ -308,11 +304,7 @@ export default () => (
             height="1"
             viewBox="0 0 375 812"
           >
-            <image
-              href="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/portfolio.svg"
-              width="375"
-              height="812"
-            ></image>
+            <image href="/images/section/portfolio.svg" width="375" height="812" />
           </pattern>
         </defs>
       </svg>

@@ -23,12 +23,7 @@ export default () => (
   <SectionZoffy
     rightWrapper={
       <picture className="flex relative justify-end">
-        <img
-          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
-          alt=""
-          width={536}
-          height="100%"
-        />
+        <img src="/images/section/zoffy.png" alt="" width={536} height="100%" />
       </picture>
     }
   />
@@ -52,12 +47,7 @@ export default () => (
     button="爸爸去哪儿了 👉🏻"
     rightWrapper={
       <picture className="flex relative justify-end">
-        <img
-          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
-          alt=""
-          width={536}
-          height="100%"
-        />
+        <img src="/images/section/zoffy.png" alt="" width={536} height="100%" />
       </picture>
     }
   />
@@ -78,12 +68,7 @@ export default () => (
   <SectionZoffy
     rightWrapper={
       <picture className="flex relative justify-end">
-        <img
-          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
-          alt=""
-          width={536}
-          height="100%"
-        />
+        <img src="/images/section/zoffy.png" alt="" width={536} height="100%" />
       </picture>
     }
     reverse
@@ -107,12 +92,7 @@ export default () => (
   <SectionZoffy
     rightWrapper={
       <picture className="flex relative justify-end">
-        <img
-          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy.png"
-          alt=""
-          width={536}
-          height="100%"
-        />
+        <img src="/images/section/zoffy.png" alt="" width={536} height="100%" />
       </picture>
     }
     reverse
@@ -191,12 +171,7 @@ export default () => (
   <SectionZoffy
     rightWrapper={
       <picture className="flex relative justify-end">
-        <img
-          src="https://gitee.com/meetqy/ocrazy/raw/main/public/images/section/zoffy-1.png"
-          alt=""
-          width={536}
-          height="100%"
-        />
+        <img src="/images/section/zoffy-1.png" alt="" width={536} height="100%" />
       </picture>
     }
     title="L'app pour la tranquillité d'esprit"
