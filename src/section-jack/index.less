@@ -1,0 +1,23 @@
+.section-jack {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &::after {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 60px;
+    height: 100%;
+    background: transparent linear-gradient(354deg, #99cc66 0%, #26a4ba 100%) 0% 0% no-repeat
+      padding-box;
+    content: '';
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+    &::after {
+      right: 0;
+    }
+  }
+}

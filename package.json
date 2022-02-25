@@ -13,7 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/meetqy/ocrazy"
+    "url": "https://github.com/meetqy/ocrazy",
+    "branch": "main",
+    "platform": "github"
   },
   "scripts": {
     "start": "cross-env TAILWIND_MODE=watch dumi dev",
@@ -46,6 +48,7 @@
     ]
   },
   "dependencies": {
+    "ahooks": "^3.1.10",
     "react": "^16.12.0 || ^17.0.0"
   },
   "devDependencies": {
