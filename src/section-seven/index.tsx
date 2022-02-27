@@ -1,4 +1,3 @@
-import type { CSSProperties } from 'react';
 import React from 'react';
 
 export interface SectionSevenProps {
@@ -6,10 +5,6 @@ export interface SectionSevenProps {
   leftWrapper?: JSX.Element;
   /**自定义右边内容 */
   rightWrapper?: JSX.Element;
-  /**外部容器className */
-  className?: string;
-  /**外部容器style */
-  style?: CSSProperties;
   /**跳转文本 */
   jumpText?: string;
   /**标题 */
@@ -86,10 +81,7 @@ const leftWrapper = (props: SectionSevenProps) => {
 
 const SectionSeven = (props: SectionSevenProps): JSX.Element => {
   return (
-    <section
-      className={`md:px-14 px-6 flex flex-shrink-0 mx-auto overflow-hidden max-w-7xl w-full ${props.className}`}
-      style={props.style}
-    >
+    <section className="md:px-14 px-6 flex flex-shrink-0 mx-auto overflow-hidden max-w-7xl w-full">
       <div className="flex items-center flex-row">
         <div className="flex items-start flex-col pt-24 pb-28 flex-1">
           {props.leftWrapper ? props.leftWrapper : leftWrapper(props)}

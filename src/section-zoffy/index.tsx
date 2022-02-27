@@ -1,4 +1,3 @@
-import type { CSSProperties } from 'react';
 import React from 'react';
 
 export interface SectionZoffyProps {
@@ -6,10 +5,6 @@ export interface SectionZoffyProps {
   leftWrapper?: JSX.Element;
   /**自定义右边内容 */
   rightWrapper?: JSX.Element;
-  /**外部容器className */
-  className?: string;
-  /**外部容器style */
-  style?: CSSProperties;
 
   /**标题 */
   title?: string;
@@ -59,10 +54,9 @@ const SectionZoffy = (props: SectionZoffyProps): JSX.Element => {
 
   return (
     <section
-      className={`bg-slate-800 flex items-center overflow-hidden md:flex-row flex-col ${props.className}`}
+      className="bg-slate-800 flex items-center overflow-hidden md:flex-row flex-col"
       style={{
         height: props.height,
-        ...props.style,
       }}
     >
       <div className="px-8 lg:px-16 w-full xl:w-4/5 2xl:w-3/4 mx-0 xl:mx-auto">
