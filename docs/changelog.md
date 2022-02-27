@@ -9,6 +9,17 @@ order: 1
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/meetqy/ocrazy/compare/v0.0.6...v0.0.7) (2022-02-27)
+
+### ♻ Code Refactoring | 代码重构
+
+- 移除 className 和 style 的 props ([4324846](https://github.com/meetqy/ocrazy/commit/432484676c96e8f1fe04ec88ef09d3a629587786))
+
+### ✨ Features | 新功能
+
+- 新增 section-jack ([c2f6d81](https://github.com/meetqy/ocrazy/commit/c2f6d814997d69c9a65016c4f975d243a3b36904))
+- add MIT LICENSE ([8fa0c2a](https://github.com/meetqy/ocrazy/commit/8fa0c2a09ed74bc600c9859d24e90cd9748afabd))
+
 ### [0.0.6](https://github.com/meetqy/ocrazy/compare/v0.0.5...v0.0.6) (2022-02-24)
 
 ### 📦 Chores | 其他更新
