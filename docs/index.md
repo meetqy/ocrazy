@@ -13,8 +13,8 @@ features:
     title: 丰富的UI组件
     desc: 每个组件都有大量的Demo作为参考，Demo均来源于实际的网站效果
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
-    title: 欢迎投稿
-    desc: 发送你喜欢的网站链接或UI图，我们一起来实现吧！！！
+    title: Pull Request
+    desc: 如果你有喜欢的网页或UI组件，欢迎提出iusses或Pull Request哦
 ---
 
 # 📦 安装
